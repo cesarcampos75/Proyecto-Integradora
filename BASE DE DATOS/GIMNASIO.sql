@@ -19,7 +19,7 @@ create table if not exists persona(
     )auto_increment=100 engine=innodb;
 
     
-create table if not exists cliente(
+create table if not exists clientes(
 	id_cliente int not null primary key auto_increment,
     foreign key fk_cliente(id_cliente) references persona(id_persona)
     on update cascade on delete cascade,
