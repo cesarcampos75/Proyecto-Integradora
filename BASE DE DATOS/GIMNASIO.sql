@@ -83,7 +83,7 @@ id_empleado int not null,
 fecha date not null,
 hora time not null,
 estado_cita enum("confirmar", "cancelada", "completada"),
-constraint fk_cte_cit foreign key (id_cliente) references cliente(id_cliente),
+constraint fk_cte_cit foreign key (id_cliente) references clientes(id_cliente),
 constraint fk_emp_cit foreign key (id_empleado) references empleado(id_empleado)
 );
 
@@ -104,7 +104,7 @@ create table if not exists fichaMedica(
     foreign key fk_dni_empl(id_emplead) references empleado(id_empleado)
     on update cascade on delete cascade,
     id_client int not null,
-    foreign key fk_clie(id_client) references cliente(id_cliente)
+    foreign key fk_clie(id_client) references clientes(id_cliente)
     on update cascade on delete cascade,
     observaciones varchar(500),
     motivo varchar(500)
