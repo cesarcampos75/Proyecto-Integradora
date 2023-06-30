@@ -240,6 +240,8 @@ select * from citas_spin;
   select * from ficha_nutri;
   select * from ficha_fisio;
   select * from clases;
+  select * from clases;
+
   
   
   insert into citas values
