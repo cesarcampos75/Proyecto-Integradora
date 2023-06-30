@@ -1,0 +1,51 @@
+.topnav { 
+  background-color:white; 
+  margin: 0; 
+  overflow: hidden; 
+  width: 100%; 
+  border: 2px solid orange; 
+  border-radius: 20px; 
+   
+} 
+ 
+.topnav a { 
+  float: right; 
+  color:black; 
+  text-align: center; 
+  padding: 24px 17px; 
+  text-decoration: underline; 
+  font-size: 20px; 
+} 
+
+.topnav-container { 
+  text-align: right; /* Agregado */ 
+} 
+ 
+.topnav a:hover { 
+  background-color: orange; 
+  border-radius: 20px; 
+  color: black; 
+} 
+ 
+.topnav a.active { 
+  background-color: red; 
+  border-radius: 20px; 
+  color: white; 
+} 
+
+.menu-icon { 
+  float: right; 
+  color: #f2f2f2; 
+  text-align: center; 
+  padding: 14px 17px; 
+  font-size: 20px; 
+} 
+
+.logo { 
+  float: left; 
+  width: 100px; /* Ajusta el tamaño del logo según tus preferencias */ 
+  border-radius: 20px; 
+} 
+.zoom-image:hover { 
+transform: scale(1.1); 
+} 
