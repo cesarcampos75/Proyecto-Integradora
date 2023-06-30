@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="../Bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="../Integradora/style.css">
+        <script src="../Bootstrap/js/bootstrap.js"></script>
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+        <div class="container-fluid"> 
+          <a class="navbar-brand" href="#" style="color: yellow;">EGOGYM</a> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation"> 
+            <span class="navbar-toggler-icon"></span> 
+          </button> 
+          <div class="collapse navbar-collapse" id="navbarScroll"> 
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;"> 
+              <li class="nav-item"> 
+                <a class="nav-link active" aria-current="page" href="../Integradora/recepcionista_inicio.html">Inicio</a> 
+              </li> 
+              <li class="nav-item"> 
+                <a class="nav-link" href="../Integradora/alta.html">Registrar empleados</a> 
+              </li> 
+              <li class="nav-item"> 
+                <a class="nav-link" href="#">Citas Agendadas</a> 
+              </li> 
+            </ul> 
+            <div class=" row"> 
+              <div class="btn-group-sm"> 
+             <button type="button" class="btn btn-warning btn boton" data-bs-toggle="modal" data-bs-target="#registro" style="margin-right: 10px;"> 
+              Ingresar 
+            </button> 
+              </div> 
+            </div> 
+          </div>     
+          </div> 
+        </div> 
+      </nav> 
+      <div class="container">
+        <br>
+        <form action="#" style="background-color: black; opacity: 0.8; border-radius: 5px; padding: 5%;margin: auto; width: 80%;">
+          <div class="row">
+            <legend class="form-label" style="color: goldenrod;">Registrar empleado</legend>
+            <hr class="dropdown-divider" style="height: 2px; background-color: slategray;">
+            <div class="col-12 col-lg-6">
+        <label style="color: white;">Nombre</label><br>
+        <input type="text" placeholder=""><br>
+        <label style="color: white;">Apellido Paterno</label><br>
+        <input type="text" placeholder="" name="apaterno"><br>
+        <label style="color: white;" >Apellido Materno</label><br>
+        <input type="text" placeholder="" name="amaterno"><br>
+        <label style="color: white; margin-top: 10px;">Sexo</label><br>
+        <input type="radio" value="femenino" name="sexo"> <b style="color: antiquewhite;">Femenino</b><br>
+        <input type="radio" value="masculino" name="sexo"> <b style="color: antiquewhite;">Masculino</b><br>
+            </div>
+           <div class="col-12 col-lg-6">
+            <label style="color: white;" >Correo electrónico</label><br>
+        <input type="text" placeholder="" name="correo"><br>
+            <label style="color: white;">Contraseña</label><br>
+            <input type="password" placeholder="" name="password"><br>
+            <label style="color: white;">Confirmar contraseña</label><br>
+            <input type="password" placeholder="" name="confirmed_pass"><br>
+            <label style="color: white;" >Tipo de empleado</label><br>
+            <select name="Tipos_Empleados">
+              <option value="entrenador">Entrenador</option>
+              <option value="nutriologo">Nutriologo</option>
+              <option value="fisioterapeuta">Fisioterapeuta</option>
+          </select><br><br>
+           </div>
+           
+          </div>
+      <hr class="dropdown-divider" style="height: 2px; background-color: slategray;">
+      <button type="reset" value="Limpiar" class="btn btn-secondary">Borrar cambios</button>
+      <button type="submit"name="Registrar" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#alta">Registrar</button>
+      
+    </form>
+    <div class="modal fade" id="alta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Registro exitoso</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            El registro de este empleado ha sido confirmado
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </body>
+</html>
