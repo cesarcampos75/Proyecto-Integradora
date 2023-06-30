@@ -2,7 +2,12 @@ use egogym;
 
 /*CONSULTAS DEL LADO DEL CLIENTE
  1.Buscar citas disponibles en determinada fecha para determinado servicio*/
-
+select * from citas
+inner join servicios_empleados on citas.serv_emp=servicios_empleados.id_empserv
+inner join servicios on servicios_empleados.servicio=servicios.codigo
+where citas.estado='cancelada' or 'completada'
+and servicios.nombre = 'fisioterapia'
+and citas.fecha = '2023-06-28';
 
   /*2.Buscar el perfil de determinado empleado. (foto, nombre de persona y servicio que brinda)*/
 
